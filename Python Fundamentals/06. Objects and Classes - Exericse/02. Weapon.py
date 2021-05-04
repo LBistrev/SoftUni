@@ -5,8 +5,17 @@ class Weapon:
     def shoot(self):
         if self.bullets:
             self.bullets -= 1
-            return "shooting…"
+            return "shooting..."
         return "no bullets left"
 
     def __repr__(self):
         return f"Remaining bullets: {self.bullets}"
+
+weapon = Weapon(5)
+weapon.shoot()
+weapon.shoot()
+weapon.shoot()
+weapon.shoot()
+weapon.shoot()
+weapon.shoot()
+print(weapon)
