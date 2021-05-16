@@ -4,7 +4,8 @@ submissions = {}
 while not commands == "exam finished":
     if "banned" in commands:
         username, disc = commands.split("-")
-        results.pop(username)
+        if username in results:
+            results.pop(username)
     else:
         username, language, points = commands.split("-")
         points = int(points)
