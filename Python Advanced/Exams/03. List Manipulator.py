@@ -1,3 +1,5 @@
+from collections import deque
+
 def list_manipulator(sequence, *args):
     numbers = deque(sequence)
     if args[0] == "add" and args[1] == "beginning":
@@ -28,4 +30,4 @@ def list_manipulator(sequence, *args):
     return list(numbers)
 
 
-from collections import deque
+
